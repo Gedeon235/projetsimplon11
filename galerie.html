@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Galerie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles pour les icônes sociales dans le footer */
+        .social-links-footer {
+            margin-top: 20px;
+        }
+
+        .social-links-footer h4 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #3498db;
+        }
+
+        .social-icons-footer {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons-footer a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #3498db;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons-footer a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons-footer a.facebook { background: #3b5998; }
+        .social-icons-footer a.whatsapp { background: #25D366; }
+        .social-icons-footer a.youtube { background: #FF0000; }
+        .social-icons-footer a.tiktok { background: #000000; }
+
+        /* Styles pour les icônes dans les informations de contact */
+        .footer-section p i {
+            width: 20px;
+            margin-right: 10px;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1><a href="index.html">TechStore</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html" class="active">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cart-icon">Panier (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-header">
+            <div class="container">
+                <h2>Galerie</h2>
+                <p>Découvrez nos produits en situation réelle et nos réalisations</p>
+            </div>
+        </section>
+
+        <section class="gallery-content">
+            <div class="container">
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Tout</button>
+                    <button class="filter-btn" data-filter="products">Produits</button>
+                    <button class="filter-btn" data-filter="events">Événements</button>
+                    <button class="filter-btn" data-filter="installations">Installations</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="products">
+                       
+                        <div class="gallery-caption">
+                            <img src="./assets/installationhom.jpeg" alt="Sécurité bureautique">
+                            <h3>Installation home cinéma</h3>
+                            <p>Configuration complète pour une expérience immersive</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                       
+                        <div class="gallery-caption">
+                            <img src="./assets/salon2023.jpeg" alt="Sécurité bureautique">
+                            <h3>Salon Tech 2023</h3>
+                            <p>Notre stand au salon technologique de Douala</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="installations">
+                       
+                        <div class="gallery-caption">
+                            <img src="./assets/reseauentreprise.jpeg" alt="Sécurité bureautique">
+                            <h3>Réseau entreprise</h3>
+                            <p>Installation de solution réseau pour PME</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="products">
+                       
+                        <div class="gallery-caption">
+                            <img src="./assets/smarthom.jpeg" alt="Sécurité bureautique">
+                            <h3>Smart Home</h3>
+                            <p>Solution domotique complète</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                       
+                        <div class="gallery-caption">
+                            <img src="./assets/formation.jpeg" alt="Sécurité bureautique">
+                            <h3>Formation clients</h3>
+                            <p>Session de formation sur nos nouveaux produits</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="installations">
+                       
+                        <div class="gallery-caption">
+                            <img src="./assets/securité.jpeg" alt="Sécurité bureautique">
+                            <h3>Sécurité bureautique</h3>
+                            <p>Installation de système de surveillance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>TechStore</h3>
+                 <p>Votre partenaire technologique de confiance depuis 2010.
+Depuis plus d'une décennie, TechStore accompagne particuliers et professionnels dans leur transformation numérique. Nous mettons à votre disposition une sélection rigoureuse de produits innovants, ainsi qu’un ensemble de services technologiques sur mesure, conçus pour répondre aux défis de l’ère digitale.</p>
+                <p>📍 Quartier Gassi, N'Djamena, Tchad</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contactez-nous</h3>
+                <p><i class="fas fa-envelope"></i> Email: info@techstore.td</p>
+                <p><i class="fas fa-phone"></i> Tél: +235 68 65 57 86</p>
+                <p><i class="fas fa-clock"></i> Horaires: Lun-Ven 8h-18h | Sam 9h-16h</p>
+                
+                <!-- Liens vers les réseaux sociaux -->
+                <div class="social-links-footer">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons-footer">
+                        <a href="https://facebook.com/techstore" class="facebook" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/23568655786" class="whatsapp" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://youtube.com/techstore" class="youtube" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://tiktok.com/@techstore" class="tiktok" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 TechStore. Tous droits réservés. | Conçu avec passion au Tchad</p>
+        </div>
+    </footer>
+
+    <!-- Panier flottant -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Articles du panier ajoutés dynamiquement -->
+        </div>
+        <div class="cart-total">
+            Total: <span id="cart-total-amount">0</span> FCFA
+        </div>
+        <button class="checkout-btn">Procéder au paiement</button>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

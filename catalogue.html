@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Catalogue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles pour le footer */
+        footer .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section {
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            color: #3498db;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Styles pour les icônes sociales dans le footer */
+        .social-links-footer {
+            margin-top: 20px;
+        }
+
+        .social-links-footer h4 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #3498db;
+        }
+
+        .social-icons-footer {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons-footer a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #3498db;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons-footer a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons-footer a.facebook { background: #3b5998; }
+        .social-icons-footer a.whatsapp { background: #25D366; }
+        .social-icons-footer a.youtube { background: #FF0000; }
+        .social-icons-footer a.tiktok { background: #000000; }
+
+        /* Styles pour les icônes dans les informations de contact */
+        .footer-section p i {
+            width: 20px;
+            margin-right: 10px;
+            color: #3498db;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-top: 1px solid #3a546b;
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .social-icons-footer {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1><a href="index.html">TechStore</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html" class="active">Catalogue</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cart-icon">Panier (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalogue-header">
+            <div class="container">
+                <h2>Notre Catalogue</h2>
+                <div class="filters">
+                    <select id="category-filter">
+                        <option value="all">Toutes les catégories</option>
+                        <option value="smartphone">Smartphones</option>
+                        <option value="laptop">Ordinateurs portables</option>
+                        <option value="accessory">Accessoires</option>
+                        <option value="service">Services</option>
+                    </select>
+                    <select id="price-filter">
+                        <option value="all">Tous les prix</option>
+                        <option value="0-50000">Moins de 50 000 FCFA</option>
+                        <option value="50000-150000">50 000 - 150 000 FCFA</option>
+                        <option value="150000-300000">150 000 - 300 000 FCFA</option>
+                        <option value="300000+">Plus de 300 000 FCFA</option>
+                    </select>
+                    <input type="text" id="search-input" placeholder="Rechercher un produit...">
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-products">
+            <div class="container">
+                <div class="products-grid" id="catalogue-products">
+                    <!-- Produits chargés dynamiquement par JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>TechStore</h3>
+                <p>Votre partenaire technologique de confiance depuis 2010.
+Depuis plus d'une décennie, TechStore accompagne particuliers et professionnels 
+dans leur transformation numérique. Nous mettons à votre disposition une sélection 
+rigoureuse de produits innovants, ainsi qu’un ensemble de services technologiques 
+sur mesure, conçus pour répondre aux défis de l’ère digitale..</p>
+                <p>📍 Quartier Gassi, N'Djamena, Tchad</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contactez-nous</h3>
+                <p><i class="fas fa-envelope"></i> Email: info@techstore.td</p>
+                <p><i class="fas fa-phone"></i> Tél: +235 68 65 57 86</p>
+                <p><i class="fas fa-clock"></i> Horaires: Lun-Ven 8h-18h | Sam 9h-16h</p>
+                
+                <!-- Liens vers les réseaux sociaux -->
+                <div class="social-links-footer">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons-footer">
+                        <a href="https://facebook.com/techstore" class="facebook" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/23568655786" class="whatsapp" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://youtube.com/techstore" class="youtube" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://tiktok.com/@techstore" class="tiktok" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 TechStore. Tous droits réservés. | Conçu avec passion au Tchad</p>
+        </div>
+    </footer>
+
+    <!-- Panier flottant -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Articles du panier ajoutés dynamiquement -->
+        </div>
+        <div class="cart-total">
+            Total: <span id="cart-total-amount">0</span> FCFA
+        </div>
+        <button class="checkout-btn">Procéder au paiement</button>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

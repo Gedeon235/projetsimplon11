@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - À propos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles supplémentaires pour les icônes sociales */
+        .social-links-footer {
+            margin-top: 20px;
+        }
+
+        .social-links-footer h4 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #3498db;
+        }
+
+        .social-icons-footer {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons-footer a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #3498db;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons-footer a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons-footer a.facebook { background: #3b5998; }
+        .social-icons-footer a.whatsapp { background: #25D366; }
+        .social-icons-footer a.youtube { background: #FF0000; }
+        .social-icons-footer a.tiktok { background: #000000; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1><a href="index.html">TechStore</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="a-propos.html" class="active">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cart-icon">Panier (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-header">
+            <div class="container">
+                <h2>À propos de TechStore</h2>
+                <p>Découvrez notre histoire, notre mission et notre équipe</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-text fade-in">
+                    <h3>Notre histoire</h3>
+                    <p>Fondée en 2025, TechStore est née de la passion pour la technologie et de la volonté de rendre les produits high-tech accessibles à tous en Afrique. Depuis nos débuts modestes comme petit revendeur, nous avons grandi pour devenir l'un des principaux détaillants technologiques de la région.</p>
+                    
+                    <p>Notre parcours a été marqué par un engagement constant envers la qualité, l'innovation et le service client. Aujourd'hui, nous sommes fiers de servir des milliers de clients satisfaits à travers le Cameroun et au-delà.</p>
+                    
+                    <h3>Notre mission</h3>
+                    <p>Notre mission est de démocratiser l'accès à la technologie en proposant une large gamme de produits et services adaptés aux besoins et budgets de nos clients. Nous croyons en la puissance de la technologie pour transformer les vies, les entreprises et les communautés.</p>
+                    
+                    <p>Nous nous engageons à fournir des solutions technologiques qui améliorent la productivité, facilitent la communication et ouvrent de nouvelles opportunités pour nos clients.</p>
+                    
+                    <h3>Nos valeurs</h3>
+                    <ul>
+                        <li><strong>Innovation</strong> : Nous restons à la pointe des dernières tendances technologiques et cherchons constamment à apporter les solutions les plus récentes et efficaces à nos clients.</li>
+                        <li><strong>Qualité</strong> : Nous sélectionnons rigoureusement nos produits et partenaires pour garantir que nos clients reçoivent toujours le meilleur rapport qualité-prix.</li>
+                        <li><strong>Service client</strong> : La satisfaction de nos clients est notre priorité absolue. Nous nous efforçons de dépasser les attentes à chaque interaction.</li>
+                        <li><strong>Accessibilité</strong> : Nous rendons la technologie abordable pour tous grâce à des options de financement flexibles et des prix compétitifs.</li>
+                        <li><strong>Intégrité</strong> : Nous conduisons nos affaires avec honnêteté et transparence, en établissant des relations de confiance avec nos clients et partenaires.</li>
+                    </ul>
+                    
+                    <h3>Notre engagement</h3>
+                    <p>Chez TechStore, nous ne nous contentons pas de vendre des produits technologiques. Nous offrons des solutions complètes qui incluent l'installation, la configuration, la formation et le support après-vente. Notre équipe de techniciens certifiés est toujours disponible pour vous aider à tirer le meilleur parti de vos appareils.</p>
+                    
+                    <p>Nous nous engageons également envers la communauté à travers des programmes de formation technologique pour les jeunes et le soutien aux initiatives locales de numérisation.</p>
+                </div>
+                
+                <div class="team-section fade-in">
+                    <h3>Notre équipe</h3>
+                    <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Notre succès est porté par une équipe de professionnels passionnés et expérimentés, dévoués à vous offrir la meilleure expérience technologique.</p>
+                    
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-photo">KGC</div>
+                            <h4>Kaoubassi Goua Caleb</h4>
+                            <p>Fondateur & CEO</p>
+                            <p>15+ ans d'expérience dans le secteur technologique</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-photo">BE</div>
+                            <h4>Ba-Yfray Eunice</h4>
+                            <p>Directrice Commerciale</p>
+                            <p>Spécialiste en stratégie marché et développement business</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-photo">PDG</div>
+                            <h4>Pessem Djeovo Gedeon</h4>
+                            <p>Responsable Technique</p>
+                            <p>Expert en solutions informatiques et support technique</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-photo">AS</div>
+                            <h4>Alice Sango</h4>
+                            <p>Responsable Customer Care</p>
+                            <p>Dédiée à votre satisfaction et expérience client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>TechStore</h3>
+               <p>Votre partenaire technologique de confiance depuis 2010.
+Depuis plus d'une décennie, TechStore accompagne particuliers et professionnels dans leur transformation numérique. Nous mettons à votre disposition une sélection rigoureuse de produits innovants, ainsi qu’un ensemble de services technologiques sur mesure, conçus pour répondre aux défis de l’ère digitale.</p>
+                <p>📍 Quartier Gassi, N'Djamena, Tchad</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contactez-nous</h3>
+                <p>📧 Email: info@techstore.td</p>
+                <p>📞 Tél: +235 68 65 57 86</p>
+                <p>🕒 Horaires: Lun-Ven 8h-18h | Sam 9h-16h</p>
+                
+                <!-- Liens vers les réseaux sociaux -->
+                <div class="social-links-footer">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons-footer">
+                        <a href="https://facebook.com/techstore" class="facebook" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/23568655786" class="whatsapp" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://youtube.com/techstore" class="youtube" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://tiktok.com/@techstore" class="tiktok" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 TechStore. Tous droits réservés. | Conçu avec passion au Tchad</p>
+        </div>
+    </footer>
+
+    <!-- Panier flottant -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Articles du panier ajoutés dynamiquement -->
+        </div>
+        <div class="cart-total">
+            Total: <span id="cart-total-amount">0</span> FCFA
+        </div>
+        <button class="checkout-btn">Procéder au paiement</button>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
